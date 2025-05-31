@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1440, initial-scale=1.0">
+  <title>Bentolio | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gilroy:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #F9F1F0;
+      font-family: 'Gilroy', Arial, sans-serif;
+      margin: 0;
+      color: #000;
+    }
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+    .header {
+      background: #FADCD9;
+      border-radius: 20px;
+      padding: 32px 40px;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 25px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .nav {
+      display: flex;
+      gap: 48px;
+      font-size: 16px;
+      font-weight: 300;
+    }
+    .nav a {
+      color: #000;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav a:hover {
+      color: #F8AFA6;
+    }
+    .main {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .left, .right {
+      flex: 1 1 320px;
+      min-width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .section {
+      background: #FADCD9;
+      border-radius: 20px;
+      padding: 32px;
+      box-sizing: border-box;
+    }
+    .about {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: 55px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .slogan {
+      font-size: 56px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      line-height: 1;
+    }
+    .work-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .work-item {
+      font-size: 25px;
+      font-weight: 500;
+      background: #fff;
+      border-radius: 16px;
+      padding: 16px 24px;
+      margin-bottom: 8px;
+      box-shadow: 0 2px 8px #fadcd955;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .portrait {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      text-align: center;
+      padding: 0;
+    }
+    .portrait img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      display: block;
+    }
+    .socials {
+      display: flex;
+      gap: 48px;
+      font-size: 15px;
+      font-weight: 300;
+      margin-top: 16px;
+    }
+    .contact {
+      font-size: 15px;
+      font-weight: 300;
+      margin-top: 16px;
+    }
+    @media (max-width: 1024px) {
+      .main { flex-direction: column; }
+      .left, .right { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">JULIA HUANG</div>
+      <nav class="nav">
+        <a href="#projects">PROJECTS</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="section" id="about">
+          <div class="section-title">Contact me</div>
+          <div class="contact">Have some questions?</div>
+        </div>
+        <div class="section">
+          <div class="section-title">About</div>
+          <div class="about">Julia Huang is an innovative AI artist, renowned for blending cutting-edge technology with creative expression. Based in LA, she crafts unique digital art experiences accessible globally.</div>
+        </div>
+        <div class="section">
+          <div class="section-title">Socials</div>
+          <div class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Linkedin</a>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="section" style="background:#fff;">
+          <div class="slogan">Artist Redefining Architecture with AI-Driven Design</div>
+        </div>
+        <div class="section portrait">
+          <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80" alt="Portrait">
+        </div>
+        <div class="section" id="projects">
+          <div class="section-title">Work</div>
+          <div class="work-list">
+            <div class="work-item">Musea</div>
+            <div class="work-item">Elara</div>
+            <div class="work-item">Verve</div>
+            <div class="work-item">Zephyr</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
